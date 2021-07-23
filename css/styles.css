@@ -120,6 +120,8 @@ div.nutrition {
 
 .page {
   min-height: calc(100vh - 320px);
+  margin-bottom: 100px;
+  margin-top: 40px;
   position: relative;
 }
 
