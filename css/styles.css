@@ -239,6 +239,22 @@ div.nutrition {
     width: 100%;
     min-height: calc(100vh - 4375%);
   }
+
+  .home {
+    right: 40%;
+  }
+
+  .login {
+    right: 28%;
+  }
+
+  .cart {
+    right: 16%;
+  }
+
+  .checkout {
+    right: 4%;
+  }
 }
 
 /********************* Login ********************/
