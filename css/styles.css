@@ -155,6 +155,20 @@ div.nutrition {
   width: 100%;
 }
 
+.cart {
+  height: 15%;
+  position: absolute;
+  bottom: 20%;
+  right: 12%;
+}
+
+.checkout {
+  height: 15%;
+  position: absolute;
+  bottom: 20%;
+  right: 4%;
+}
+
 .backstore-link {
   color: white;
   position: absolute;
@@ -305,4 +319,100 @@ button[type=submit]{
 
 .signupbox{
   height: 490px;
+}
+
+/********************* Cart ********************/
+
+.shoppingcart, .subtotal{
+  margin: 50px 330px;
+}
+
+
+.cart-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th{
+  padding: 5px;
+  margin-left: 20px;
+  text-align: left;
+  color: white;
+  background: #071E3D;
+  height: 40px;
+}
+
+.cart-table td{
+  padding: 10px;
+}
+
+.info{
+  padding: 10px 5px;
+}
+
+
+.productinfo{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productinfo input{
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  margin-left: none;
+  padding-left:none;
+  font-size:12px;
+}
+
+.shoppingcart img{
+  height: 85px;
+  width: 85px;
+}
+
+.subtotal{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.subtotal table{
+  width: 100%;
+  max-width: 31%;
+  border-top: 3px solid;
+  border-color: #071E3D;
+  font-weight: bold;
+}
+
+td:last-child{
+  text-align: right;
+}
+
+th:last-child{
+  text-align: right;
+}
+
+.quantity input{
+  background-color: transparent;
+  border: 1px solid;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+
+}
+
+.cart-table th:nth-child(2){
+  padding-left: 45px;
+}
+
+.subtotal button{
+  width: 240px;
+  height: 30px;
+  background: #071E3D;
+  border-radius: 15px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
 }
