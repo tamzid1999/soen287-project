@@ -328,9 +328,12 @@ button[type=submit]{
 }
 
 /********************* Cart ********************/
+.cart-margin {
+  style="overflow-x:auto;"
+}
 
 .shoppingcart, .subtotal{
-  margin: 50px 330px;
+  margin: 50px 20%;
 }
 
 
@@ -379,7 +382,6 @@ button[type=submit]{
 .subtotal{
   display: flex;
   justify-content: flex-end;
-
 }
 
 .subtotal table{
