@@ -329,6 +329,7 @@ button[type=submit]{
 
 .shoppingcart, .subtotal{
   margin: 50px 20%;
+  margin-bottom: 80px;
 }
 
 
