@@ -14,6 +14,11 @@ function expand() {
     y.innerHTML = "Detailed Description ▼";
   }
   
+  function icedcoffee() {
+   var icedcoffee = document.getElementById("ic").value;
+}
+
+  
 }
 var subtractFromCart = document.getElementsByClassName("subtract")
 var addToCart = document.getElementsByClassName("add")
