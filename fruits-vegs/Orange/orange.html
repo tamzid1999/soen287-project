@@ -28,35 +28,58 @@
         <li><a class="aisle-fruits" href="../../fruits-vegs/page.html">Fruits & Vegetables</a></li>
         <hr />
         <li><a class="aisle-meats" href="../../meats/page.html">Meats</a></li>
-        <hr / />
+        <hr/>
         <li><a class="aisle-beverages" href="../../beverages/page.html">Beverages</a></li>
       </ul>
 	  </div>
 
 <div align="center">
 <br><br>
-<img class="box" src="orange.jpg" alt="orange">
+<img src="orange.jpg" alt="orange">
+<p><h4> Freshly cultivated in the fertile land of China, you can rest assured that only the best orange are chosen for export. </h4> </p>
 <form>
   <label for="qty">Quantity:</label>
-  <select name="orange" id="orange">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
-    <option>6</option>
+  <select name="orange" id="orange" onchange="calculateAmount(this.value)" required>
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
   </select>
+  <label for="Price">Price:</label>
+  <input type="quantity" name="tot_amount" id="tot_amount" type="text" readonly style="border: none; width:40px;">
+  <script>
+    function calculateAmount(val){
+      var tot_price = val * 1.99;
+      var divobj = document.getElementById('tot_amount');
+      var pr = tot_price.toFixed(2) + "$";
+      divobj.value = pr;
+    }
+  </script>
   <br><br>
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-<h4 onclick="expand()" class="expand"><div id="reverse">Detailed Description ▼</div></h4>
+</div>
 
-<div id="expand" style='display:none'>
-<p><h4> Freshly cultivated in the fertile land of China, you can rest assured that only the best orange are chosen for export. </h4> </p>
-
-
-<div align="center" class="nutrition">
+<div align="center">
+  <button class="button" id="details" onclick="ShowHide()" style="background-color: black; border: none; color: white; text-align:center; text-decoration: none; font-family:FreeMono, monospace; font-size: 16px; border-radius: 10px; line-height: 2; ">More Description</button>
+  <script>
+    function ShowHide(){
+      var x = document.getElementById('nutritionVal');
+      if(x.style.display == 'none'){
+        x.style.display = 'block';
+      }
+      else{
+        x.style.display = 'none';
+      }
+    }
+  </script>  
+  </div>
+  
+<div align="center" class="nutrition" id="nutritionVal" style="display: none;"><table border="border">
 <table border="border">
 <caption><b>Nutritional Value</b></caption>
     <tr>
@@ -92,16 +115,12 @@
         <td>100</td>
     </tr>
 </table>
-</div>
-</div>
-</div>
-</div>
+</div></div>
 
 <div class="footer">
   <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
-<script src="../../scripts.js"></script>
+
 </body>
 </html>
-
