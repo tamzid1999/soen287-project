@@ -18,6 +18,8 @@ function expand() {
 function icedcoffee() {
 	var icedcoffee = document.getElementById("ic").value;
 	localStorage.setItem("ic",icedcoffee);
+	var totalprice = 0.99 * icedcoffee;
+	localStorage.setItem("tp",totalprice.toFixed(2));
 }
 
   
