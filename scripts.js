@@ -15,6 +15,7 @@ function expand() {
   }
   
 }
+
 var subtractFromCart = document.getElementsByClassName("subtract")
 var addToCart = document.getElementsByClassName("add")
 var deleteFromCart = document.getElementsByClassName("delete")
@@ -28,7 +29,7 @@ for(var i=0; i<deleteFromCart.length; i++){
         var buttonClicked = event.target
         var row =buttonClicked.parentNode.parentNode.parentNode.parentNode;
         row.parentNode.removeChild(row);
-        updateCartTotal()
+        updateSubtotal()
     })
 }
 
@@ -44,9 +45,7 @@ for(var i=0; i<subtractFromCart.length; i++){
         else {
             tdQuantity--
             quantityWrite.innerText=tdQuantity
-            console.log("clicked")
-            console.log(tdQuantity)
-            updateCartTotal()
+            updateSubtotal()
         }
     })
 
@@ -60,33 +59,28 @@ for(var i=0; i<addToCart.length; i++){
         var quantityWrite=(this).parentElement.parentElement.childNodes[2]
             tdQuantity++
             quantityWrite.innerText=tdQuantity
-            console.log("clicked")
-            console.log(tdQuantity)
-            updateCartTotal()
+            updateSubtotal()
         
     })
 
 }
 
-function updateCartTotal(){
-    var itemPrice = document.getElementsByClassName("price")
+function updateSubtotal(){
+    var itemPrice = document.getElementsByClassName("costperitem")
     var itemQuantity = document.getElementsByClassName("itemquantity")
+    var itemSubtotal = document.getElementsByClassName("price")
     var subtotal = 0
     for (var i=0; i<itemPrice.length;i++){
         itemPrice[i]
         itemQuantity[i]
-        var tempPrice = parseFloat(itemPrice[i].innerText.replace("$",""))
+        var tempPrice = parseFloat(itemPrice[i].innerText.replace(/[^\d.-]/g,""))
         var tempQuantity = parseFloat(itemQuantity[i].innerText)
+        itemSubtotal[i].innerText="$"+(tempPrice*tempQuantity).toFixed(2)
         subtotal =subtotal+ (tempPrice*tempQuantity)
     }
     document.getElementsByClassName("cartsubtotal")[0].innerText="$"+subtotal.toFixed(2)
     document.getElementsByClassName("cartgst")[0].innerText="$"+(subtotal*0.05).toFixed(2)
     document.getElementsByClassName("cartqst")[0].innerText="$"+(subtotal*0.1).toFixed(2)
     document.getElementsByClassName("carttotal")[0].innerText="$"+(subtotal*1.15).toFixed(2)
-    console.log(subtotal)
 }
-
-var x=document.getElementsByClassName("cartsubtotal")
-console.log(x)
-
 
