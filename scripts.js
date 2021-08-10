@@ -62,10 +62,15 @@ for(var i=0; i<addToCart.length; i++){
         var buttonClicked = event.target 
         var tdQuantity = parseFloat((this).parentElement.parentElement.childNodes[2].innerText)
         var quantityWrite=(this).parentElement.parentElement.childNodes[2]
-            tdQuantity++
-            quantityWrite.innerText=tdQuantity
-            updateSubtotal()
-        
+        if (tdQuantity==4){
+          return
+      }
+      else {
+        tdQuantity++
+        quantityWrite.innerText=tdQuantity
+        updateSubtotal()
+      }
+            
     })
 
 }
