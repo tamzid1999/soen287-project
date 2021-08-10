@@ -31,10 +31,7 @@ h3 {
 }
 
 h4.expand {
-  width: 60%;
-  background-color: #f80;
-  margin-left: calc(100vh - 340px);
-  margin-right: calc(100vh - 320px);
+ color:rgb(255,0,0);
 }
 
 
