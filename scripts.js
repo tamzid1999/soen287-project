@@ -8,10 +8,10 @@ function expand() {
 
   
   var y = document.getElementById("reverse");
-  if (y.innerHTML === "More Description ▼") {
-    y.innerHTML = "More Description ▲";
+  if (y.innerHTML === "Detailed Description ▼") {
+    y.innerHTML = "Detailed Description ▲";
   } else {
-    y.innerHTML = "More Description ▼";
+    y.innerHTML = "Detailed Description ▼";
   }
   
 }
