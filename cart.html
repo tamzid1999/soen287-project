@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="scripts.js" async></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                         <div class="info">
                             Chicken
                             <br>1.99$/lb <br>
-                            <input type="button" value="Delete">
+                            <input class="delete" type="button" value="Delete">
                         </div>
                     </div>
                 </td>
@@ -41,17 +42,17 @@
                         <td>
                             <input class="subtract" type="button" value="-">
                         </td>
-                        <td>
+                        <td class="itemquantity">
                             1
                         </td>
                         <td>
-                            <input type="button" value="+">
+                            <input class="add" type="button" value="+">
                         </td>
 
                     </table>
 
                 </td>
-                <td>1.99$</td>
+                <td class="price">1.99$</td>
             </tr>
             <tr>
                 <td>
@@ -60,7 +61,7 @@
                         <div class="info">
                             Beef
                             <br>2.99$/lb <br>
-                            <input type="button" value="Delete">
+                            <input class="delete" type="button" value="Delete">
                         </div>
                     </div>
                 </td>
@@ -69,14 +70,14 @@
                         <td>
                             <input class="subtract" type="button" value="-">
                         </td>
-                        <td>1</td>
+                        <td class="itemquantity">1</td>
                         <td>
-                            <input type="button" value="+">
+                            <input class="add" type="button" value="+">
                         </td>
 
                     </table>
                 </td>
-                <td>2.99$</td>
+                <td class="price">2.99$</td>
             </tr>
             <tr>
                 <td>
@@ -85,7 +86,7 @@
                         <div class="info">
                             Iced Coffee
                             <br>2.99$/each <br>
-                            <input type="button" value="Delete">
+                            <input class="delete" type="button" value="Delete">
                         </div>
                     </div>
                 </td>
@@ -94,14 +95,14 @@
                         <td>
                             <input class="subtract" type="button" value="-">
                         </td>
-                        <td>1</td>
+                        <td class="itemquantity">1</td>
                         <td>
-                            <input type="button" value="+">
+                            <input class="add" type="button" value="+">
                         </td>
 
                     </table>
                 </td>
-                <td>2.99$</td>
+                <td class="price">2.99$</td>
             </tr>
             <tr>
                 <td>
@@ -112,7 +113,7 @@
                             <br>
                              1.29$/each
                             <br>
-                            <input type="button" value="Delete">
+                            <input class="delete" type="button" value="Delete">
                         </div>
                     </div>
                 </td>
@@ -121,14 +122,14 @@
                         <td>
                             <input class="subtract" type="button" value="-">
                         </td>
-                        <td>1</td>
+                        <td class="itemquantity">1</td>
                         <td>
-                            <input type="button" value="+">
+                            <input class="add" type="button" value="+">
                         </td>
 
                     </table>
                 </td>
-                <td>1.29$</td>
+                <td class="price">1.29$</td>
             </tr>
         </table>
     </div>
@@ -137,19 +138,19 @@
         <table>
             <tr>
                 <td>Subtotal</td>
-                <td>9.26$</td>
+                <td class="cartsubtotal">9.26$</td>
             </tr>
             <tr>
                 <td>GST</td>
-                <td>0.46$</td>
+                <td class="cartgst">0.46$</td>
             </tr>
             <tr>
                 <td>QST</td>
-                <td>0.92$</td>
+                <td class="cartqst">0.92$</td>
             </tr>
             <tr>
                 <td>Total</td>
-                <td>10.64$</td>
+                <td class="carttotal">10.64$</td>
             </tr>
             <tr>
                 <td>
@@ -167,6 +168,5 @@
         <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
         <a class="backstore-link" href="backstore/backstore-menu.html">Backstore</a>
       </div>
-<script src="scripts.js"></script>
-</body>
+  </body>
 </html>
