@@ -37,7 +37,6 @@
 <div align="center">
 <br><br>
 <img src="milk.jpg" alt="milk">
-<p><h4>Do you rather have your milk in carton box or plastic bag? No need to fight, we offer both and with different % of fat too!</h4> </p>
 <form>
   <label for="qty">Quantity:</label>
   <select name="milk" id="milk" onchange="calculateAmount(this.value)" required>
@@ -49,6 +48,7 @@
     <option value="5">5</option>
     <option value="6">6</option>
   </select>
+  <br><br>
   <label for="Price">Price:</label>
   <input type="quantity" name="tot_amount" id="tot_amount" type="text" readonly style="border: none; width:40px;">
   <script>
@@ -63,24 +63,11 @@
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-</div>
+<h4 onclick="expand()" class="expand"><div id="reverse">Detailed Description ▼</div></h4>
 
-<div align="center">
-  <button class="button" id="details" onclick="ShowHide()" style="background-color: black; border: none; color: white; text-align:center; text-decoration: none; font-family:FreeMono, monospace; font-size: 16px; border-radius: 10px; line-height: 2; ">More Description</button>
-  <script>
-    function ShowHide(){
-      var x = document.getElementById('nutritionVal');
-      if(x.style.display == 'none'){
-        x.style.display = 'block';
-      }
-      else{
-        x.style.display = 'none';
-      }
-    }
-  </script>  
-  </div>
-  
-<div align="center" class="nutrition" id="nutritionVal" style="display: none;"><table border="border">
+<div id="expand" style='display:none'>
+  <p><h4>Do you rather have your milk in carton box or plastic bag? No need to fight, we offer both and with different % of fat too!</h4> </p>
+<div align="center" class="nutrition">
 <table border="border">
 <caption><b>Nutritional Value</b></caption>
     <tr>
@@ -123,5 +110,6 @@
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
 
+<script src="../../scripts.js"></script>
 </body>
 </html>

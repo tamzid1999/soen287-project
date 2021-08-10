@@ -27,7 +27,7 @@
         <li><a class="aisle-fruits" href="../../fruits-vegs/page.html">Fruits & Vegetables</a></li>
         <hr />
         <li><a class="aisle-meats" href="../../meats/page.html">Meats</a></li>
-        <hr/>
+        <hr / />
         <li><a class="aisle-beverages" href="../../beverages/page.html">Beverages</a></li>
       </ul>
 	  </div>
@@ -35,7 +35,6 @@
 <div align="center">
 <br><br>
 <img src="icedcoffee.jpg" alt="iced coffee">
-<p><h4>Enjoy our cold and sweet iced coffee. Our iced coffee is much better than what you will get elsewhere. Don't believe us? Come try it then! </h4> </p>
 <form>
   <label for="qty">Quantity:</label>
   <select name="ic" id="ic" onchange="calculateAmount(this.value)" required>
@@ -47,11 +46,12 @@
     <option value="5">5</option>
     <option value="6">6</option>
   </select>
+  <br><br>
   <label for="Price">Price:</label>
   <input type="quantity" name="tot_amount" id="tot_amount" type="text" readonly style="border: none; width:40px;">
   <script>
     function calculateAmount(val){
-      var tot_price = val * 1.99;
+      var tot_price = val * 0.99;
       var divobj = document.getElementById('tot_amount');
       var pr = tot_price.toFixed(2) + "$";
       divobj.value = pr;
@@ -61,24 +61,14 @@
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-</div>
 
-<div align="center">
-<button class="button" id="details" onclick="ShowHide()" style="background-color: black; border: none; color: white; text-align:center; text-decoration: none; font-family:FreeMono, monospace; font-size: 16px; border-radius: 10px; line-height: 2; ">More Description</button>
-<script>
-  function ShowHide(){
-    var x = document.getElementById('nutritionVal');
-    if(x.style.display == 'none'){
-      x.style.display = 'block';
-    }
-    else{
-      x.style.display = 'none';
-    }
-  }
-</script>  
-</div>
+<h4 onclick="expand()" class="expand"><div id="reverse">Detailed Description ▼</div></h4>
 
-<div align="center" class="nutrition" id="nutritionVal" style="display: none;">
+<div id="expand" style='display:none'>
+<p><h4>Enjoy our cold and sweet iced coffee. Our iced coffee is much better than what you will get elsewhere. Don't believe us? Come try it then! </h4> </p>
+
+
+<div align="center" class="nutrition">
 <table border="border">
 <caption><b>Nutritional Value</b></caption>
     <tr>
@@ -116,11 +106,15 @@
 </table>
 </div>
 </div>
+</div>
+</div>
 
 <div class="footer">
   <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
 
+<script src="../../scripts.js"></script>
 </body>
 </html>
+
