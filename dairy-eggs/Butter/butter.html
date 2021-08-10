@@ -37,8 +37,7 @@
 
 <div align="center">
 <br><br>
-<img src="butter.jpg" alt="butter">
-<p><h4>Our butter is made by our in-house team of experts directly from Italy. They are masters in their trade and have been doing that for over 30 years!</h4> </p>
+<img class="box" src="butter.jpg" alt="butter">
 <form>
   <label for="qty">Quantity:</label>
   <select name="butter" id="butter">
@@ -53,7 +52,11 @@
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-</div>
+<h4 onclick="expand()" class="expand"><div id="reverse">More Description ▼</div></h4>
+
+<div id="expand" style='display:none'>
+<p><h4>Our butter is made by our in-house team of experts directly from Italy. They are masters in their trade and have been doing that for over 30 years!</h4> </p>
+
 
 <div align="center" class="nutrition">
 <table border="border">
@@ -91,12 +94,16 @@
         <td>0</td>
     </tr>
 </table>
-</div></div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="footer">
   <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
-
+<script src="../../scripts.js"></script>
 </body>
 </html>
+

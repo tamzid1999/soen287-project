@@ -36,8 +36,7 @@
 
 <div align="center">
 <br><br>
-<img src="milk.jpg" alt="milk">
-<p><h4>Do you rather have your milk in carton box or plastic bag? No need to fight, we offer both and with different % of fat too!</h4> </p>
+<img class="box" src="milk.jpg" alt="milk">
 <form>
   <label for="qty">Quantity:</label>
   <select name="milk" id="milk">
@@ -52,7 +51,12 @@
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-</div>
+<h4 onclick="expand()" class="expand"><div id="reverse">More Description ▼</div></h4>
+
+<div id="expand" style='display:none'>
+
+<p><h4>Do you rather have your milk in carton box or plastic bag? No need to fight, we offer both and with different % of fat too!</h4> </p>
+
 
 <div align="center" class="nutrition">
 <table border="border">
@@ -90,12 +94,16 @@
         <td>6</td>
     </tr>
 </table>
-</div></div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="footer">
   <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
-
+<script src="../../scripts.js"></script>
 </body>
 </html>
+

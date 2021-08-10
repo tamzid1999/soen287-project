@@ -30,6 +30,14 @@ h3 {
   font-size: 175%;
 }
 
+h4.expand {
+  width: 60%;
+  background-color: #f80;
+  margin-left: calc(100vh - 340px);
+  margin-right: calc(100vh - 320px);
+}
+
+
 ul {
   line-height: 4;
   list-style-type: none;
@@ -121,18 +129,20 @@ div.nutrition {
 .page {
   min-height: calc(100vh - 320px);
   margin-bottom: 80px;
-  margin-top: 40px;
+  margin-top: 10px;
   position: relative;
+  
 }
 
 .navigation {
   background-color: #D8E3E7;
-  border-radius: 25px;
+  border-radius: 50px;
   float: left;
   margin-left: 2%;
-  margin-top: 80px;
+  margin-top: 10px;
   margin-right: 30px;
   padding: 2%;
+  margin-bottom: 80px;
 }
 
 .content {

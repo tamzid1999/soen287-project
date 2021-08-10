@@ -36,8 +36,7 @@
 
 <div align="center">
 <br><br>
-<img src="beef.jpg" alt="beef">
-<p><h4>Our beef come from the Angus Scottish breed. The quality is much higher and it ranks right next to the Wagyu beef. </h4> </p>
+<img class="box" src="beef.jpg" alt="beef">
 <form>
   <label for="qty">Quantity:</label>
   <select name="beef" id="beef">
@@ -52,7 +51,13 @@
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-</div>
+
+<h4 onclick="expand()" class="expand"><div id="reverse">More Description ▼</div></h4>
+
+<div id="expand" style='display:none'>
+
+<p><h4>Our beef come from the Angus Scottish breed. The quality is much higher and it ranks right next to the Wagyu beef. </h4> </p>
+
 
 <div align="center" class="nutrition">
 <table border="border">
@@ -90,12 +95,16 @@
         <td>1</td>
     </tr>
 </table>
-</div></div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="footer">
   <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
-
+<script src="../../scripts.js"></script>
 </body>
 </html>
+

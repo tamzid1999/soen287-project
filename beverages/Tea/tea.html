@@ -35,8 +35,7 @@
 
 <div align="center">
 <br><br>
-<img src="tea.jpg" alt="tea">
-<p><h4> Our tea come from non-GMO leaves and sustainable farming. By drinking our tea, you will not only savour the taste but make sure that workers were paid fairly</h4> </p>
+<img class="box" src="tea.jpg" alt="tea">
 <form>
   <label for="qty">Quantity:</label>
   <select name="tea" id="tea">
@@ -51,7 +50,13 @@
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-</div>
+
+<h4 onclick="expand()" class="expand"><div id="reverse">More Description ▼</div></h4>
+
+<div id="expand" style='display:none'>
+
+<p><h4> Our tea come from non-GMO leaves and sustainable farming. By drinking our tea, you will not only savour the taste but make sure that workers were paid fairly</h4> </p>
+
 
 <div align="center" class="nutrition">
 <table border="border">
@@ -91,11 +96,14 @@
 </table>
 </div>
 </div>
+</div>
+</div>
 
 <div class="footer">
   <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
-
+<script src="../../scripts.js"></script>
 </body>
 </html>
+

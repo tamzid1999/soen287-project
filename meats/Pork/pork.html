@@ -36,8 +36,7 @@
 
 <div align="center">
 <br><br>
-<img src="pork.jpg" alt="pork">
-<p><h4>Our pork meat is locally farmed in the rural Quebec. They are corn and grass fed and are allowed to roam freely.</h4> </p>
+<img class="box" src="pork.jpg" alt="pork">
 <form>
   <label for="qty">Quantity:</label>
   <select name="pork" id="pork">
@@ -52,7 +51,11 @@
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-</div>
+<h4 onclick="expand()" class="expand"><div id="reverse">More Description ▼</div></h4>
+
+<div id="expand" style='display:none'>
+<p><h4>Our pork meat is locally farmed in the rural Quebec. They are corn and grass fed and are allowed to roam freely.</h4> </p>
+
 
 <div align="center" class="nutrition">
 <table border="border">
@@ -96,6 +99,7 @@
   <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
-
+<script src="../../scripts.js"></script>
 </body>
 </html>
+

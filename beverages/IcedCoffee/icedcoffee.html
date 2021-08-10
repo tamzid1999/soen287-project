@@ -34,8 +34,7 @@
 
 <div align="center">
 <br><br>
-<img src="icedcoffee.jpg" alt="iced coffee">
-<p><h4>Enjoy our cold and sweet iced coffee. Our iced coffee is much better than what you will get elsewhere. Don't believe us? Come try it then! </h4> </p>
+<img class="box" src="icedcoffee.jpg" alt="iced coffee">
 <form>
   <label for="qty">Quantity:</label>
   <select name="ic" id="ic">
@@ -50,7 +49,13 @@
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-</div>
+
+
+<h4 onclick="expand()" class="expand"><div id="reverse">More Description ▼</div></h4>
+
+<div id="expand" style='display:none'>
+<p><h4>Enjoy our cold and sweet iced coffee. Our iced coffee is much better than what you will get elsewhere. Don't believe us? Come try it then! </h4> </p>
+
 
 <div align="center" class="nutrition">
 <table border="border">
@@ -90,11 +95,15 @@
 </table>
 </div>
 </div>
+</div>
+</div>
 
 <div class="footer">
   <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
 
+<script src="../../scripts.js"></script><script src="../../scripts.js"></script>
 </body>
 </html>
+

@@ -35,11 +35,10 @@
 
 <div align="center">
 <br><br>
-<img src="juice.jpg" alt="juice">
-<p><h4> With each sip, your taste buds will thank you. Fear not, the freshness is guaranteed as we blender the different fruits right on front of you. </h4> </p>
+<img class="box" src="juice.jpg" alt="juice">
 <form>
   <label for="qty">Quantity:</label>
-  <select name="juice" id="juice">
+  <select name="ic" id="ic">
     <option value="one">1</option>
     <option value="two">2</option>
     <option value="three">3</option>
@@ -51,7 +50,12 @@
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-</div>
+
+<h4 onclick="expand()" class="expand"><div id="reverse">More Description ▼</div></h4>
+
+<div id="expand" style='display:none'>
+
+<p><h4> With each sip, your taste buds will thank you. Fear not, the freshness is guaranteed as we blender the different fruits right on front of you. </h4> </p>
 
 <div align="center" class="nutrition">
 <table border="border">
@@ -89,12 +93,16 @@
         <td>100</td>
     </tr>
 </table>
-</div></div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="footer">
   <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
-
+<script src="../../scripts.js"></script>
 </body>
 </html>
+

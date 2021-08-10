@@ -36,8 +36,7 @@
 
 <div align="center">
 <br><br>
-<img src="chicken.jpg" alt="chicken">
-<p><h4>Our whole chicken lets you do what you think is best. Be it for BBQ, burgers or whole chicken roast, you can rest assured our chicken is the best.</h4> </p>
+<img class="box" src="chicken.jpg" alt="chicken">
 <form>
   <label for="qty">Quantity:</label>
   <select name="chicken" id="chicken">
@@ -52,7 +51,11 @@
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-</div>
+<h4 onclick="expand()" class="expand"><div id="reverse">More Description ▼</div></h4>
+
+<div id="expand" style='display:none'>
+<p><h4>Our whole chicken lets you do what you think is best. Be it for BBQ, burgers or whole chicken roast, you can rest assured our chicken is the best.</h4> </p>
+
 
 <div align="center" class="nutrition">
 <table border="border">
@@ -90,12 +93,16 @@
         <td>0</td>
     </tr>
 </table>
-</div></div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="footer">
   <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
-
+<script src="../../scripts.js"></script>
 </body>
 </html>
+

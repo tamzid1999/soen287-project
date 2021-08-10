@@ -36,8 +36,7 @@
 
 <div align="center">
 <br><br>
-<img src="water.jpg" alt="water">
-<p><h4> Yes, we know that tap water is good. But you know what's better, our bottled water that contains all the necessary minerals for the human body.</h4> </p>
+<img class="box" src="water.jpg" alt="water">
 <form>
   <label for="qty">Quantity:</label>
   <select name="water" id="water">
@@ -52,7 +51,12 @@
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-</div>
+<h4 onclick="expand()" class="expand"><div id="reverse">More Description ▼</div></h4>
+
+<div id="expand" style='display:none'>
+
+<p><h4> Yes, we know that tap water is good. But you know what's better, our bottled water that contains all the necessary minerals for the human body.</h4> </p>
+
 
 <div align="center" class="nutrition">
 <table border="border">
@@ -90,12 +94,16 @@
         <td>0</td>
     </tr>
 </table>
-</div></div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="footer">
   <p style="text-align:left;">© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
-
+<script src="../../scripts.js"></script>
 </body>
 </html>
+

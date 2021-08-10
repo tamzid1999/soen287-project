@@ -35,8 +35,7 @@
 
 <div align="center">
 <br><br>
-<img src="salmon.jpg" alt="salmon">
-<p><h4>Our salmon fish are wild caught from the Atlantic Ocean, not farmed. As a result, you can expect the best taste and the best bang for your buck.</h4> </p>
+<img class="box" src="salmon.jpg" alt="salmon">
 <form>
   <label for="qty">Quantity:</label>
   <select name="salmon" id="salmon">
@@ -51,7 +50,11 @@
   <input type="submit" value="Add To Cart">
 </form>
 <p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
-</div>
+<h4 onclick="expand()" class="expand"><div id="reverse">More Description ▼</div></h4>
+
+<div id="expand" style='display:none'>
+<p><h4>Our salmon fish are wild caught from the Atlantic Ocean, not farmed. As a result, you can expect the best taste and the best bang for your buck.</h4> </p>
+
 
 <div align="center"  class="nutrition">
 <table border="border">
@@ -89,12 +92,16 @@
         <td>7</td>
     </tr>
 </table>
-</div></div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="footer">
   <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
   <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
 </div>
-
+<script src="../../scripts.js"></script>
 </body>
 </html>
+
