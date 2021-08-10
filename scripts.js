@@ -14,7 +14,12 @@ function expand() {
     y.innerHTML = "Detailed Description ▼";
   }
 }
-  
+
+function icedcoffee() {
+	var icedcoffee = document.getElementById("ic").value;
+	localStorage.setItem("ic",icedcoffee);
+}
+
   
 var subtractFromCart = document.getElementsByClassName("subtract")
 var addToCart = document.getElementsByClassName("add")
