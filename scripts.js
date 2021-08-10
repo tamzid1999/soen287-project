@@ -62,7 +62,7 @@ for(var i=0; i<addToCart.length; i++){
         var buttonClicked = event.target 
         var tdQuantity = parseFloat((this).parentElement.parentElement.childNodes[2].innerText)
         var quantityWrite=(this).parentElement.parentElement.childNodes[2]
-        if (tdQuantity==4){
+        if (tdQuantity==6){
           return
       }
       else {
