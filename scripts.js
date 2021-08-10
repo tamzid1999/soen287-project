@@ -96,3 +96,7 @@ function updateSubtotal(){
     document.getElementsByClassName("carttotal")[0].innerText="$"+(subtotal*1.15).toFixed(2)
 }
 
+var continueShoppingButton = document.getElementsByClassName("continueShopping")
+continueShoppingButton[0].onclick = function(){
+location.href="index.html"
+}
