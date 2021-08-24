@@ -1,3 +1,7 @@
+<?php
+setcookie("chicken", 1, time()+1000000);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +50,9 @@
                             <input class="subtract" type="button" value="-">
                         </td>
                         <td class="itemquantity">
-							3
+							<?php
+                            echo $_COOKIE["chicken"];
+                            ?>
                         </td>
                         <td>
                             <input class="add" type="button" value="+">
